@@ -1,18 +1,14 @@
 {
   "name": "neverconsolelogagain",
   "displayName": "NeverConsoleLogAgain",
-  "description": "Press Ctrl + Alt + C (Windows/Linux) or Cmd + Option + C (macOS) to print out console.log();",
+  "description": "Press Ctrl Alt C (Windows/Linux) or Cmd Option C (macOS) to print out console.log",
   "version": "0.0.1",
+  "keywords": ["Console", "log", "javascript", "fast"],
   "engines": {
     "vscode": "^1.100.0"
   },
   "publisher": "tobiaseriksson",
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onCommand:neverconsolelogagain.insertConsoleLog"
-  ],
+  "categories": ["Programming Languages", "Snippets"],
   "main": "./extension.js",
   "icon": "icon.png",
   "repository": {
