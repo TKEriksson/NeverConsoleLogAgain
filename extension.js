@@ -1,7 +1,7 @@
 const vscode = require('vscode');
 
 function activate(context) {
-    let disposable = vscode.commands.registerCommand('neverconsolelogagain.insertConsoleLog', function () {
+    let disposable = vscode.commands.registerCommand('nevereverconsolelogagain.insertConsoleLogCode', function () {
         const editor = vscode.window.activeTextEditor;
         if (editor) {
             const selection = editor.selection;

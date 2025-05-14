@@ -1,51 +1,43 @@
 {
   "name": "neverconsolelogagain",
-  "displayName": "NeverConsoleLogAgain",
-  "description": "Press Ctrl Alt C (Windows/Linux) or Cmd Option C (macOS) to print out console.log",
+  "displayName": "Never Console Log Again",
+  "description": "A Visual Studio Code extension to quickly insert console.log() with a keyboard shortcut.",
   "version": "0.0.1",
-  "keywords": ["Console", "log", "javascript", "fast"],
+  "publisher": "tobiaseriksson",
   "engines": {
     "vscode": "^1.100.0"
   },
-  "publisher": "tobiaseriksson",
-  "categories": ["Programming Languages", "Snippets"],
-  "main": "./extension.js",
+  "categories": [
+    "Other"
+  ],
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TKEriksson/NeverConsoleLogAgain.git"
+    "url": "https://github.com/TKEriksson/neverconsolelogagain"
   },
   "bugs": {
-    "url": "https://github.com/TKEriksson/NeverConsoleLogAgain/issues"
+    "url": "https://github.com/TKEriksson/neverconsolelogagain/issues"
   },
-  "homepage": "https://github.com/TKEriksson/NeverConsoleLogAgain",
+  "license": "MIT",
   "contributes": {
     "commands": [
       {
-        "command": "neverconsolelogagain.insertConsoleLog",
+        "command": "neverconsolelogagain.insertConsoleLogCode",
         "title": "Insert Console Log"
       }
     ],
     "keybindings": [
       {
-        "command": "neverconsolelogagain.insertConsoleLog",
+        "command": "neverconsolelogagain.insertConsoleLogCode",
         "key": "ctrl+alt+c",
-        "mac": "cmd+option+c",
         "when": "editorTextFocus"
       }
     ]
   },
-  "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "vscode-test"
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.100.0",
-    "@types/mocha": "^10.0.10",
-    "@types/node": "20.x",
-    "eslint": "^9.25.1",
-    "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.5.2"
-  }
+  "main": "extension.js",
+  "keywords": [
+    "console.log",
+    "developer productivity",
+    "keyboard shortcut"
+  ]
 }

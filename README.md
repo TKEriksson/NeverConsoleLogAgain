@@ -1,17 +1,38 @@
 # Never Console Log Again
 
-Writes out `console.log();` for you with a simple keyboard shortcut.
+## Overview
+"Never Console Log Again" is a Visual Studio Code extension that allows you to quickly insert `console.log()` statements with a keyboard shortcut or a command. Whether you're debugging or monitoring, this extension makes your workflow faster and more efficient.
 
-Tired of typing `console.log()` hundreds of times a day? This extension saves you time and keystrokes by inserting the complete statement with a single keyboard shortcut, positioning your cursor right where you need it. You can also select a text to wrap a console.log() around it, same command.
+## Features
+- Automatically wraps selected text with `console.log()`.
+- If no text is selected, inserts a `console.log()` statement at the cursor position and places the cursor inside the parentheses.
+- Streamlines debugging for developers.
 
 ## Usage
 
-1. Install the extension.
-2. Press **Ctrl + Alt + C** (Windows/Linux) or **Cmd + Option + C** (macOS) in the editor.
-3. `console.log();` will be inserted, and the cursor will be placed inside the parentheses.
+### Command
+You can use the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS) and search for:
 
-## Customizing the Keybinding
+```
+Insert Console Log
+```
 
-The default keybinding for this extension is **Ctrl + Alt + C** (Windows/Linux) or **Cmd + Option + C** (macOS). You can change it it the settings for the extention. 
+Alternatively, you can invoke the command programmatically using:
 
-**Enjoy!**
+```
+nevereverconsolelogagain.insertConsoleLogCode
+```
+
+### Keyboard Shortcut
+For convenience, you can assign a custom keyboard shortcut to this command in your VS Code settings.
+
+## Installation
+1. Open the Extensions view in VS Code (`Ctrl+Shift+X` or `Cmd+Shift+X` on macOS).
+2. Search for `Never Console Log Again`.
+3. Click "Install".
+
+## Contributing
+Feel free to submit issues or pull requests on the [GitHub repository](https://github.com/TKEriksson/neverconsolelogagain).
+
+## License
+This extension is licensed under the MIT License. See the [LICENSE](./LICENSE.md) file for more information.
