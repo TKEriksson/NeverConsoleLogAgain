@@ -2,7 +2,7 @@
   "name": "neverconsolelogagain",
   "displayName": "Never Console Log Again",
   "description": "A Visual Studio Code extension to quickly insert console.log() with a keyboard shortcut.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "tobiaseriksson",
   "engines": {
     "vscode": "^1.100.0"
